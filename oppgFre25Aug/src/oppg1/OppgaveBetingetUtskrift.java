@@ -22,10 +22,11 @@ public class OppgaveBetingetUtskrift {
 	}
 
 	public static void main(String[] args) {
-		func f = (String s) -> s.charAt(0) == 'X';
+		func startMedX = (String s) -> s.charAt(0) == 'X';
+		func minst3tegn = (String s) -> s.length() > 2;
 
-
-		betingetUtskrift("Xsfjydsg", f);
+		betingetUtskrift("Xsfjydsg", startMedX);
+		betingetUtskrift("sdkfjhbvg", minst3tegn);
 	}
 }
 
