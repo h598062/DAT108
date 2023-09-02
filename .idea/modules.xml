@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DAT108.iml" filepath="$PROJECT_DIR$/DAT108.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DAT108-OBLIG1/DAT108-OBLIG1.iml" filepath="$PROJECT_DIR$/../DAT108-OBLIG1/DAT108-OBLIG1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../dat108-h2023/dat108-h2023.iml" filepath="$PROJECT_DIR$/../dat108-h2023/dat108-h2023.iml" />
       <module fileurl="file://$PROJECT_DIR$/../dat108-h2023/f01-eksempler/f01-eksempler.iml" filepath="$PROJECT_DIR$/../dat108-h2023/f01-eksempler/f01-eksempler.iml" />
       <module fileurl="file://$PROJECT_DIR$/../dat108-h2023/f02-eksempler-skeleton/f02-eksempler-skeleton.iml" filepath="$PROJECT_DIR$/../dat108-h2023/f02-eksempler-skeleton/f02-eksempler-skeleton.iml" />
