@@ -7,7 +7,10 @@ public class Konger {
 
 	private static final String IMG_ROOT = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
 
-	public static List<Konge> norske;
+	protected static final List<Konge> norske;
+
+	private Konger() {
+	}
 
 	static {
 		norske = new ArrayList<>();
