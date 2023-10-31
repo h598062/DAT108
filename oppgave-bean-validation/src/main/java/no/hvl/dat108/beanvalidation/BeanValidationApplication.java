@@ -1,4 +1,4 @@
-package no.hvl.dat108.bean_validation;
+package no.hvl.dat108.beanvalidation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

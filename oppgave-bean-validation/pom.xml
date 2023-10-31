@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>no.hvl.dat108</groupId>
-    <artifactId>bean_validation</artifactId>
+    <artifactId>bean-validation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bean_validation</name>
-    <description>bean_validation</description>
+    <name>oppgave-bean-validation</name>
+    <description>oppgave-bean_validation</description>
     <properties>
         <java.version>17</java.version>
     </properties>

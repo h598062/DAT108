@@ -1,7 +1,7 @@
-package no.hvl.dat108.bean_validation;
+package no.hvl.dat108.beanvalidation;
 
 import jakarta.validation.constraints.*;
-import no.hvl.dat108.bean_validation.customvalidator.AfterDate;
+import no.hvl.dat108.beanvalidation.customvalidator.AfterDate;
 
 import java.time.LocalDate;
 import java.util.Objects;

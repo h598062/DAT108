@@ -1,4 +1,4 @@
-package no.hvl.dat108.bean_validation;
+package no.hvl.dat108.beanvalidation;
 
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;

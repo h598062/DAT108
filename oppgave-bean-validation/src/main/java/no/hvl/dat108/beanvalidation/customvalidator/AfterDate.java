@@ -1,4 +1,4 @@
-package no.hvl.dat108.bean_validation.customvalidator;
+package no.hvl.dat108.beanvalidation.customvalidator;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

@@ -1,4 +1,4 @@
-package no.hvl.dat108.bean_validation;
+package no.hvl.dat108.beanvalidation;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
