@@ -8,6 +8,7 @@
 <body>
 <fieldset>
     <legend>Stem på din favorittfrukt</legend>
+    <p style="color: red">${feilmelding}</p>
     <form action="/stem" method="post">
         <label><input type="radio" name="frukt" value="eple">Eple</label><br>
         <label><input type="radio" name="frukt" value="appelsin">Appelsin</label><br>

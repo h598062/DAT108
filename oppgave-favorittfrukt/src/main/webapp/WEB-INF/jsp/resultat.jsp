@@ -9,13 +9,13 @@
 <fieldset>
 	<legend>Resultat</legend>
 	<p>
-		Eple:
+		Eple: ${eple}
 	</p>
 	<p>
-		Appelsin:
+		Appelsin: ${appelsin}
 	</p>
 	<p>
-		Banan:
+		Banan: ${banan}
 	</p>
 	<a href="/">Stem en gang til</a>
 </fieldset>
