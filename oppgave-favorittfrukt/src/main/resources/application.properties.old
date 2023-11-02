@@ -1,2 +1,5 @@
 spring.mvc.view.prefix=/WEB-INF/jsp/
 spring.mvc.view.suffix=.jsp
+
+# variabler
+app.frukter=banan, eple, pære, appelsin, druer

@@ -1,0 +1,9 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+# variabler
+app:
+  frukter: banan,eple,pære,appelsin,druer
