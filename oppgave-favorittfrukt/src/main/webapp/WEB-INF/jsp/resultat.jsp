@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -8,15 +9,9 @@
 <body>
 <fieldset>
 	<legend>Resultat</legend>
-	<p>
-		Eple: ${eple}
-	</p>
-	<p>
-		Appelsin: ${appelsin}
-	</p>
-	<p>
-		Banan: ${banan}
-	</p>
+	<c:forEach var="frukt" items="${stemmer}">
+		<p>${frukt.key}: ${frukt.value}</p>
+	</c:forEach>
 	<a href="/">Stem en gang til</a>
 </fieldset>
 </body>
