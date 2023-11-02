@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+	<meta charset="UTF-8">
 	<title>Favorittfrukt resultat</title>
 </head>
 <body>
