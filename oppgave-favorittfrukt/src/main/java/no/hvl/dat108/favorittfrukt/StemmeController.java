@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import java.net.http.HttpHeaders;
+import java.net.http.HttpRequest;
+import java.util.Map;
 
 
 @Controller
@@ -39,6 +41,20 @@ public class StemmeController {
 	public String resultat(Model m) {
 		m.addAttribute("stemmer", stemmeService.hentStemmer());
 		return "resultat";
+	}
+
+	@GetMapping("/test")
+	public String testGet(@RequestHeader Map<String, String> headers, @RequestBody(required = false) String request) {
+		System.out.println(request);
+		System.out.println(headers);
+		return "redirect:/";
+	}
+
+	@PostMapping("/test")
+	public String testPost(@RequestHeader Map<String, String> headers, @RequestBody(required = false) String request) {
+		System.out.println(request);
+		System.out.println(headers);
+		return "redirect:/";
 	}
 
 }
