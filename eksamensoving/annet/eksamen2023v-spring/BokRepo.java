@@ -1,0 +1,1 @@
+public interface BokRepo extends JpaRepository<Bok, Integer> {}

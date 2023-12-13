@@ -1,0 +1,1 @@
+public interface AnmeldelseRepo extends JpaRepository<Anmeldelse, Integer> {}
