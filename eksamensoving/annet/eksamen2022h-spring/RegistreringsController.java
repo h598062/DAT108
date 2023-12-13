@@ -29,15 +29,15 @@ public class RegistreringsController {
 			return "redirect:innlogging.html"
 		}
 		if (fornavn == null || etternavn == null || stilling == null || mndlonn == null) {
-			ra.addAttribute("feilmelding", "Data mangler i registreringsskjema");
+			ra.addFlashAttribute("feilmelding", "Data mangler i registreringsskjema");
 			return "redirect:nyansatt";
 		}
 		Ansatt a = new Ansatt(fornavn, etternavn, stilling, mndlonn);
 		if (!av.validerAnsatt(a)) {
-			ra.addAttribute("feilmelding", "Ugyldig data for ansatt");
+			ra.addFlashAttribute("feilmelding", "Ugyldig data for ansatt");
 			return "redirect:nyansatt";
 		}
-		ra.addAttribute("nyansatt", a);
+		ra.addFlashAttribute("nyansatt", a);
 		return "redirect:nyansatt";
 	}
 }
