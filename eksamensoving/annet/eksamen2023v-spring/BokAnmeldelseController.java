@@ -4,7 +4,7 @@ public class BokAnmeldelseController {
 	@Autowired
 	private BokAnmeldelseService bas;
 
-	@GetMapping("anmelde")
+	@GetMapping("/anmelde")
 	public String getAnmelde(@RequestParam String bok_id, Model model) {
 	 	int id;
 	 	try {
@@ -20,7 +20,7 @@ public class BokAnmeldelseController {
 		return "anmelde";
 	}
 
-	@PostMapping("anmelde")
+	@PostMapping("/anmelde")
 	public String postAnmelde(@RequestParam Integer bok_id, @RequestParam String amd_tekst, @RequestParam String navn, @RequestParam Integer rating, RedirectAttributes ra) {
 		if (bok_id == null || rating == null || amd_tekst == null || rating < 1 || rating > 5 || amd_tekst.length() == 0) {
 			return "redirect:feilmelding";
