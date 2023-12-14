@@ -10,14 +10,14 @@ public class RegistreringsController {
 	@Autowired
 	private AnsattValidator av;
 
-	@GetMapping("nyansatt")
+	@GetMapping("/nyansatt")
 	public String getNyansatt(Model model) {
 		List<String> sl = adbs.finnStillinger();
 		model.addAttribute("stillinger", sl);
 		return "nyansattskjema";
 	}
 
-	@PostMapping("nyansatt")
+	@PostMapping("/nyansatt")
 	public String postNyansatt(
 			@RequestParam("fornavn") String fornavn,
 			@RequestParam("etternavn") String etternavn,
